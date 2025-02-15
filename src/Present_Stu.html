@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CCSA</title>
     <script src="tail.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -191,9 +191,6 @@
             </div>
         </div>
     </header>
-</body>
-
-</html>
 <!-- Previous header and nav code remains unchanged -->
 <nav class="bg-[#1a365d] text-white">
     <div class="container mx-auto px-4">
@@ -607,7 +604,7 @@
                         <i class="fas fa-chevron-down text-xs"></i>
                     </a>
                     <div class="hidden pl-4 space-y-2 mt-2">
-                        <a href="Present_Stu.html" class="block py-2 text-slate-300 hover:text-[#fbbf24]">Present Students</a>
+                        <a href="#" class="block py-2 text-slate-300 hover:text-[#fbbf24]">Present Students</a>
                         <a href="https://ccsaalumni.in/" class="block py-2 text-slate-300 hover:text-[#fbbf24]">Alumni</a>
                     </div>
                 </div>
@@ -871,258 +868,19 @@
     </div>
     </div>
 </nav>
-<div class="flex flex-col justify-center items-center md:flex-row min-h-[100vh] bg-pattern">
-    <!-- Sidebar -->
+<main>
+        <!-- Student Cards Section -->
+        <section class="py-16 bg-white relative">
+            <div class="container mx-auto px-4">
+              <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-center text-[#1a365d] mb-12">Our Students</h3>
+              
+              <div id="students-container" class="space-y-12">
+                <!-- Semesters and student cards will be dynamically added here -->
+              </div>
+            </div>
+          </section>
+    </main>
 
-    <!-- Main content -->
-    <div class="w-full md:w-3/4 px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-            <!-- Card 1 -->
-            <div class="relative h-64 md:h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/utpala-borgohain" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/sj2Z0O1slmkpyxCR7FdzBDs5U9GjeWjKuM7IBssn.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Dr. Utpala Borgohain</div>
-                        <div class=" lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">Wireless communication network and Artificial
-                            Intelligence, Cognitive Radio Network, Cooperative Game Theory</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/rizwan-rehman" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/uhdGgGL9gh5LwhUW4QV0o6K04UDDWsIGEJcBH0oU.png"
-                                class="w-full rounded-full h-full object-cover"></image>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Dr. Rizwan Rehman</div>
-                        <div class=" lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div id="dynamicText" class="text-indigo-400 text-xs md:text-sm">
-                            Deep Learning (NLP, Computer Vision and Computational Biology), Programming
-                            (C/C++/Java/Python/R/MERN/PHP), Data Structures
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/toralima-bora" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/Wyh0od9HyPZ1inzyv8dFS8UHCmwPCHzVj40viQZd.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Dr. Toralima Bora</div>
-                        <div class="lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs md:text-sm">Fuzzy Mathematics, Numerical Methods, C
-                            Programming, Matlab</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/ujjal-saikia" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/9inBJ2Udzt0YCp9DY92xcXFdHL7PLeQ6WJLY2QKg.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Dr. Ujjal Saikia</div>
-                        <div class="lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">Data Analytics, Statistical Methods, Web
-                            Technologies, RDBMS, Mobile Technologies, R Programming</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/kimasha-borah" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/U4mquF8hTiPkfIGsay0ygDE2FwcyxhEkKePf3mAB.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="lg:text-xl font-semibold">Ms. Kimasha Borah</div>
-                        <div class="text-md lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">Network Analysis , Social Network Analysis ,
-                            Microprocessor , Digital System and Design</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/pranjal-kumar-bora" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="	https://erp.dibru.work/media-library/staff/vVoEEIQjUFnC1MZQYEUTrtcwSg37cX7WYwKQvrbE.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Dr. Pranjal Kumar Bora</div>
-                        <div class="lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">Machnie Learning, Computational Biology, Graph
-                            theory, Complex Network</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/ankumon-sarmah" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/6TNcXOg6UuHghb0NCpeWYffwugk6Px8N83QiHtHp.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Mr. Ankumon Sarmah</div>
-                        <div class=" lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">NLP, Speech Processing, Machine Learning</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/kankana-dutta" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/8kleNUe0ajfrxoY0MB4v1WSjHrtFApiwJfe1h0E1.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Ms. Kankana Dutta</div>
-                        <div class=" lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs  text:text-sm">Machine Learning, Speech Processing</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/sumpi-saikia" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/1quSjPrHSlfJG6WnTaPC8fF3ZBI7SwKYEeaA3syd.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Dr. Sumpi Saikia</div>
-                        <div class="lg:text-lg bg-green-100 font-medium p-2">Assistant Professor</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">Machine learning, Image processing</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/pinakshi-konwar" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/hXmzeN86ASlYbfw24sPSOeA9qXMn6kLrtJtPMU74.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Ms. Pinakshi Konwar</div>
-                        <div class="text-indigo-400 text-xs text-sm">Machine learning</div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative h-64 group">
-                <div class="absolute bottom-0 left-0 w-24 h-12 pb-1 bg-green-400 rounded-b-xl
-                         flex items-end justify-center text-sm text-white font-medium
-                         transition-all duration-300 transform -translate-y-5 group-hover:translate-y-4">
-                    <a href="https://dibru.ac.in/user-profile/gunjan-malakar" target="_blank" rel="noopener noreferrer">View details</a>
-                </div>
-                <div class="absolute flex items-center p-2 top-5 w-full h-56 bg-gray-200 rounded-xl 
-                         transition-all duration-300 hover:shadow-lg cursor-pointer">
-                    <div class="w-2/5 px-2 border-r border-slate-400 flex justify-center items-center h-full">
-                        <div class="h-36 w-36 bg-indigo-400 rounded-full p-1">
-                            <img src="https://erp.dibru.work/media-library/staff/FG6Zr2S2sSbhzL5IALnxMkflrKcL4p0iYstXNemu.png"
-                                class="w-full h-full rounded-full object-cover"></img>
-                        </div>
-                    </div>
-                    <div class="w-full flex pl-2 flex-col gap-2">
-                        <div class="text-md lg:text-xl font-semibold">Mr. Gunjan Malakar</div>
-                        <div class="text-indigo-400 text-xs lg:text-sm">Computer Networking, Database Management
-                            Systems, Object Oriented Programming Paradigmn, Datamining and Machine Learning,</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-        </div>
-    </div>
-</div>
 <footer class="bg-slate-900 text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-8">
@@ -1186,38 +944,80 @@
         </div>
     </div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script>
-    const swiper = new Swiper('.mySwiper', {
-        direction: 'vertical', // Makes the slider vertical
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        navigation: false,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 3000, // Time in milliseconds between slide transitions
-            disableOnInteraction: false, // Continue autoplay even after user interaction
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-            },
-        },
+   fetch('https://admin-ccsa.vercel.app/api/students')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("students-container");
+    const studentData = data[0]; // Assuming data[0] has the required structure
+
+    // Iterate over programmes
+    studentData.programmes.forEach(programme => {
+      // Create a container for each programme
+      const programmeContainer = document.createElement("div");
+      programmeContainer.className = "space-y-6 mb-12";
+
+      // Create a programme header
+      const programmeHeader = document.createElement("h1");
+      programmeHeader.className = "text-base lg:text-xl  font-bold text-[#1a365d] mb-4";
+      programmeHeader.textContent = ` ${programme.programme}`;
+      programmeContainer.appendChild(programmeHeader);
+
+      // Iterate over semesters within the programme
+      programme.semesters.forEach(semester => {
+        // Create a container for each semester
+        const semesterContainer = document.createElement("div");
+        semesterContainer.className = "space-y-4 mb-8";
+
+        // Create a semester header
+        const semesterHeader = document.createElement("h2");
+        semesterHeader.className = "text-sm lg:text-lg font-bold text-[#1a365d] mb-4";
+        semesterHeader.textContent = `Semester: ${semester.semester}`;
+        semesterContainer.appendChild(semesterHeader);
+
+        // Create a grid container for student cards
+        const studentGrid = document.createElement("div");
+        studentGrid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6";
+
+        // Iterate over students to create cards
+        semester.students.forEach(student => {
+          const studentCard = document.createElement("div");
+          studentCard.className =
+            "bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 group";
+
+          // Populate student card with name and initials
+          studentCard.innerHTML = `
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a365d] to-[#2563eb] flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
+                ${student.name
+                  .split(" ")
+                  .map(word => word[0])
+                  .join("")
+                  .toUpperCase()}
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-[#1a365d] group-hover:text-[#2563eb] transition-colors duration-300">${student.name}</h4>
+              </div>
+            </div>
+          `;
+
+          studentGrid.appendChild(studentCard);
+        });
+
+        // Append the student grid to the semester container
+        semesterContainer.appendChild(studentGrid);
+
+        // Append the semester container to the programme container
+        programmeContainer.appendChild(semesterContainer);
+      });
+
+      // Append the programme container to the main container
+      container.appendChild(programmeContainer);
     });
+  })
+  .catch(error => console.error('Error loading student data:', error));
+
+
 </script>
 <script>
     // Mobile menu toggle
